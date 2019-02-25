@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MesArticlesController">
+     <children>
+      <TableView fx:id="table" layoutX="18.0" layoutY="59.0" onMouseClicked="#getID" prefHeight="322.0" prefWidth="564.0">
+        <columns>
+          <TableColumn fx:id="coTitre" minWidth="0.0" prefWidth="328.0" text="Titre Article" />
+            <TableColumn fx:id="colDate" prefWidth="148.0" text="Date d'Ajoute" />
+            <TableColumn fx:id="idArticle" prefWidth="85.0" text="Ref" />
+        </columns>
+      </TableView>
+      <Text layoutX="188.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mes Article" wrappingWidth="125.13671875">
+         <font>
+            <Font name="Algerian" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="affiche" layoutX="495.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#afficher" text="Afficher" />
+      <TextField fx:id="rechercheTitre" layoutX="14.0" layoutY="390.0" />
+      <ImageView fx:id="HomeImage" fitHeight="51.0" fitWidth="64.0" layoutX="14.0" layoutY="8.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Home-icon.png" />
+         </image></ImageView>
+      <ImageView fx:id="rechercher1" fitHeight="25.0" fitWidth="30.0" layoutX="163.0" layoutY="390.0" onMouseClicked="#rechercher" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_Search_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="514.0" layoutY="14.0" onMouseClicked="#ajouterArticle" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/+haha.png" />
+         </image>
+      </ImageView>
+           </children>
+
+</AnchorPane>

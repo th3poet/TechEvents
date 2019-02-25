@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EspaceDePartageController">
+   <children>
+      <TableView fx:id="table" layoutX="21.0" layoutY="48.0" onMouseClicked="#showRef" prefHeight="437.0" prefWidth="634.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="20.0">
+        <columns>
+          <TableColumn fx:id="colAuteur" prefWidth="120.0" text="Auteur" />
+          <TableColumn fx:id="colArticle" prefWidth="272.0" text="Article" />
+            <TableColumn fx:id="colDate" minWidth="9.0" prefWidth="147.0" text="Date d'ajout" />
+            <TableColumn fx:id="idArticle" prefWidth="91.0" text="refs" />
+        </columns>
+      </TableView>
+      <TextField fx:id="rechercheTitre" layoutX="512.0" layoutY="9.0" />
+      <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="8.0" layoutY="7.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_Go_Back_52px.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="573.0" layoutY="499.0" mnemonicParsing="false" onAction="#goToArticle" text="Afficher Article" />
+      <ImageView fx:id="affiche" fitHeight="36.0" fitWidth="36.0" layoutX="476.0" layoutY="7.0" onMouseClicked="#afficher" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_Search_48px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

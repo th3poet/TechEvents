@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="GUI.Menu1Controller">
+   <children>
+      <Text layoutX="222.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace de partage">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="Accueil" layoutX="135.0" layoutY="139.0" mnemonicParsing="false" onAction="#goAccueil" text="Accueil" />
+      <Button fx:id="mesArticles" layoutX="361.0" layoutY="139.0" mnemonicParsing="false" onAction="#goMesArticles" text="Mes Articles" />
+   </children>
+</AnchorPane>

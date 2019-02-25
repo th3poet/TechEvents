@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="231.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ArticleModifiéSuprimerController">
+    <children>
+     
+      <TextArea fx:id="contenu" layoutX="14.0" layoutY="80.0" prefHeight="109.0" prefWidth="555.0" />
+      <Label layoutX="14.0" layoutY="44.0" prefHeight="17.0" prefWidth="131.0" text="Article">
+         <font>
+            <Font name="Algerian" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="200.0" prefHeight="17.0" prefWidth="68.0" text="Posted at:" />
+      <Button fx:id="supprimerArticle" layoutX="498.0" layoutY="196.0" mnemonicParsing="false" onAction="#suprimerArticle" text="Supprimer" />
+      <Button fx:id="modifierArticle" layoutX="422.0" layoutY="196.0" mnemonicParsing="false" onAction="#modfierArticle" text="Modifier" />
+      <Text fx:id="DateArticle" layoutX="72.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="161.13671875" />
+      <TextField fx:id="TitreArticle" layoutX="78.0" layoutY="40.0" />
+   </children>
+    
+</AnchorPane>

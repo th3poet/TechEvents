@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="lab" prefHeight="299.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ArticleChargéController">
+   <children>
+      
+      <Text fx:id="auteur1" layoutX="422.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="152.13671875" />
+      <Text fx:id="titreArticle1" layoutX="131.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="263.13671875" />
+      <TextArea fx:id="contenu1" layoutX="14.0" layoutY="80.0" prefHeight="109.0" prefWidth="555.0" />
+      <Label layoutX="14.0" layoutY="44.0" prefHeight="17.0" prefWidth="131.0" text="Article">
+         <font>
+            <Font name="Algerian" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="200.0" prefHeight="17.0" prefWidth="68.0" text="Posted at:" />
+      <Text fx:id="DateArticle" layoutX="70.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="210.13671875" />
+      <Label layoutX="362.0" layoutY="6.0" prefHeight="17.0" prefWidth="60.0" text="Poted by:" />
+      <ImageView fitHeight="39.0" fitWidth="36.0" layoutX="6.0" layoutY="4.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Home-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="like" fitHeight="36.0" fitWidth="48.0" layoutX="332.0" layoutY="194.0" onMouseClicked="#like" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/likeoff.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dislike" fitHeight="36.0" fitWidth="39.0" layoutX="433.0" layoutY="194.0" onMouseClicked="#dislike" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/dislikeoff.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelLIke" layoutX="323.0" layoutY="237.0" onMouseClicked="#showLikeusers" prefHeight="24.0" prefWidth="110.0" />
+      <Label fx:id="labelDislike" layoutX="449.0" layoutY="237.0" onMouseClicked="#showDislikeusers" prefHeight="24.0" prefWidth="141.0" />
+      <ImageView fitHeight="61.0" fitWidth="60.0" layoutX="12.0" layoutY="231.0" onMouseClicked="#makePdf" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/PDF-Logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+  
+</AnchorPane>
