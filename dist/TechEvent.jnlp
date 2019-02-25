@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TechEvent.jnlp">
+  <information>
+    <title>TechEvent</title>
+    <vendor>hazem</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TechEvent.jar" size="1444461" download="eager" />
+    <jar href="lib/client-4.0.1.jar" size="305386" download="eager" />
+    <jar href="lib/commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="lib/commons-email-1.5-javadoc.jar" size="185645" download="eager" />
+    <jar href="lib/commons-email-1.5-sources.jar" size="62954" download="eager" />
+    <jar href="lib/commons-email-1.5-test-sources.jar" size="247361" download="eager" />
+    <jar href="lib/commons-email-1.5-tests.jar" size="259338" download="eager" />
+    <jar href="lib/commons-email-1.5.jar" size="54495" download="eager" />
+    <jar href="lib/commons-io-2.5.jar" size="208700" download="eager" />
+    <jar href="lib/commons-lang3-3.5.jar" size="479881" download="eager" />
+    <jar href="lib/commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib/controlsfx-8.40.10.jar" size="954085" download="eager" />
+    <jar href="lib/controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib/controlsfx-samples-8.40.11.jar" size="535604" download="eager" />
+    <jar href="lib/fxsampler-1.0.9.jar" size="30952" download="eager" />
+    <jar href="lib/httpclient-4.5.jar" size="727567" download="eager" />
+    <jar href="lib/httpcore-4.4.1.jar" size="322234" download="eager" />
+    <jar href="lib/jackson-annotations-2.9.0.jar" size="66519" download="eager" />
+    <jar href="lib/jackson-core-2.9.5.jar" size="321590" download="eager" />
+    <jar href="lib/jackson-databind-2.9.5.jar" size="1342410" download="eager" />
+    <jar href="lib/jackson-dataformat-hal-1.0.4.jar" size="23079" download="eager" />
+    <jar href="lib/jackson-jaxrs-base-2.8.5.jar" size="32607" download="eager" />
+    <jar href="lib/jackson-jaxrs-json-provider-2.8.5.jar" size="15869" download="eager" />
+    <jar href="lib/jackson-module-jaxb-annotations-2.8.5.jar" size="34576" download="eager" />
+    <jar href="lib/java-client-4.0.0.jar" size="160914" download="eager" />
+    <jar href="lib/java-jwt-2.2.1.jar" size="4930837" download="eager" />
+    <jar href="lib/javax.mail-1.6.1.jar" size="654100" download="eager" />
+    <jar href="lib/jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="827921" download="eager" />
+    <jar href="lib/openjfx-dialogs-1.0.0.jar" size="95038" download="eager" />
+    <jar href="lib/slf4j-api-1.7.21.jar" size="41071" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TechEvent" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="techevent.TechEvent"  name="TechEvent" />
+  <update check="always"/>
+</jnlp>

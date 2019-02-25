@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AnnulerParticipationController">
+   <children>
+      <Text fill="#43425d" layoutX="61.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluation de l'événement  : ">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="234.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Evénement : ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="285.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="255.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description : ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblId" layoutX="626.0" layoutY="112.0" text="Label" visible="false" />
+      <Text layoutX="285.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etat : ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="277.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée : ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="270.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type : ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="234.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de place : ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="274.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix : ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblDate" layoutX="487.0" layoutY="179.0">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNom" layoutX="487.0" layoutY="137.0">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDesc" layoutX="487.0" layoutY="218.0">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDuree" layoutX="487.0" layoutY="307.0">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEtat" layoutX="487.0" layoutY="264.0">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblType" layoutX="487.0" layoutY="348.0">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblnombre" layoutX="487.0" layoutY="390.0">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrix" layoutX="487.0" layoutY="431.0">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="177.0" fitWidth="200.0" layoutX="661.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+      <Rating fx:id="rating" layoutX="505.0" layoutY="470.0" />
+      <JFXButton fx:id="evaluer" layoutX="730.0" layoutY="553.0" onAction="#AnnulerAction" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: #5CB85C; -fx-border-radius: 10;" text="Annuler Participation" textFill="WHITE" />
+      <Separator layoutX="226.0" layoutY="530.0" prefHeight="3.0" prefWidth="545.0" />
+      <Separator layoutX="215.0" layoutY="93.0" prefHeight="3.0" prefWidth="545.0" />
+      <Text layoutX="304.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note De l'evenement : " wrappingWidth="168.08984375">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="593.0" layoutY="553.0" onAction="#retourAction" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #43425D;" text="retour " textFill="WHITE" />
+   </children>
+</AnchorPane>

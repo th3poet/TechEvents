@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="1002.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UsereventController">
+    <stylesheets>
+        <URL value="@userevent.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="169.0" fitWidth="252.0" layoutX="419.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../participer.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="listView" layoutX="187.0" layoutY="76.0" prefHeight="389.0" prefWidth="409.0" AnchorPane.topAnchor="76.0" />
+      <Label fx:id="lblId" layoutX="698.0" layoutY="16.0" prefHeight="21.0" prefWidth="112.0" text="text" visible="false" />
+      <Label fx:id="lblnom" layoutX="855.0" layoutY="102.0" text="text">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblDesc" layoutX="855.0" layoutY="128.0" text="text">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblDate" layoutX="1144.0" layoutY="184.0" text="text" visible="false">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font></Label>
+      <Label fx:id="lbletat" layoutX="854.0" layoutY="180.0" text="text">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblType" layoutX="854.0" layoutY="212.0" text="text">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblDuree" layoutX="854.0" layoutY="242.0" text="text">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblPrix" layoutX="855.0" layoutY="277.0" text="text">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblNbrdePlace" layoutX="855.0" layoutY="302.0" prefHeight="30.0" prefWidth="46.0" text="text">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Text fill="#070c2c" layoutX="605.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Evenement : ">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <ImageView fx:id="imageView" fitHeight="123.0" fitWidth="248.0" layoutX="643.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="617.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text layoutX="601.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Evenement :">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text layoutX="639.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="etat :">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text layoutX="636.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type :">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text layoutX="633.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="duree :">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text layoutX="640.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix :">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text layoutX="610.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Nbr Place :" wrappingWidth="91.21680983901024">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Rating fx:id="rat" layoutX="691.0" layoutY="465.0" prefHeight="21.0" prefWidth="170.0" />
+      <Text layoutX="737.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="AnnulerParticipation" layoutX="727.0" layoutY="519.0" onAction="#AnnulerParticipationAction" prefHeight="12.0" prefWidth="138.0" style="-fx-background-color: #DC143C;" text="AnnulerParticipation " textFill="WHITE" />
+      <JFXButton fx:id="participer" layoutX="627.0" layoutY="519.0" onAction="#participeraction" prefHeight="21.0" prefWidth="91.0" style="-fx-background-color: #43425D;" text="participer" textFill="WHITE" />
+      <JFXButton fx:id="evaluer" layoutX="879.0" layoutY="519.0" onAction="#evalueraction" prefHeight="20.0" prefWidth="83.0" style="-fx-background-color: #ADFF2F;" text="Evaluer " textFill="WHITE" />
+      <JFXButton fx:id="retour" layoutX="22.0" layoutY="519.0" onAction="#retouraction" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #43425D;" text="retour" textFill="WHITE" />
+      <Text fill="#4e469a" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue dans l'éspace des événements : ">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Text>
+      <Separator layoutX="37.0" layoutY="46.0" prefHeight="11.0" prefWidth="784.0" />
+      <Separator layoutX="177.0" layoutY="65.0" orientation="VERTICAL" prefHeight="484.0" prefWidth="0.0" />
+      <JFXComboBox fx:id="comboDate" layoutX="22.0" layoutY="101.0" prefHeight="25.0" prefWidth="148.0" promptText="Entrer critere de recherche" />
+      <Text layoutX="22.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherche : ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Label fx:id="dateventlbl" layoutX="857.0" layoutY="150.0" prefHeight="30.0" prefWidth="104.0" text="text">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
