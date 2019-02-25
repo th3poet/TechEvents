@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="854.0" stylesheets="@custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListEventsController">
+   <children>
+      <StackPane prefHeight="530.0" prefWidth="935.0">
+         <children>
+            <AnchorPane fx:id="holderAnchor" prefHeight="410.0" prefWidth="731.0" style="-fx-background-color: #F05537;">
+               <children>
+                  <ImageView fitHeight="844.0" fitWidth="1069.0" layoutX="2.0" layoutY="-139.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/back.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="26.0" layoutY="47.0" prefHeight="106.0" prefWidth="706.0" style="-fx-background-color: #FFFF; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5;">
+                     <children>
+                        <Pane layoutX="22.0" layoutY="-36.0" prefHeight="106.0" prefWidth="115.0" style="-fx-background-color: #F05537; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 4;">
+                           <children>
+                              <ImageView fitHeight="85.0" fitWidth="92.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/search.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Label layoutX="173.0" layoutY="8.0" prefHeight="28.0" prefWidth="115.0" text="Filtrer par : " textFill="#f05537">
+                           <font>
+                              <Font name="Roboto Black" size="19.0" />
+                           </font>
+                        </Label>
+                        <JFXRadioButton fx:id="RDFirstName" layoutX="155.0" layoutY="45.0" prefHeight="28.0" prefWidth="107.0" selected="true" styleClass="custom-jfx-check-box" text="Nom" textFill="#f05537">
+                           <font>
+                              <Font name="Roboto Black" size="12.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="filter" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="RDMail" layoutX="250.0" layoutY="45.0" prefHeight="28.0" prefWidth="77.0" styleClass="custom-jfx-check-box" text="Nb Places" textFill="#f05537" toggleGroup="$filter">
+                           <font>
+                              <Font name="Roboto Black" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXTextField fx:id="inputSearch" focusColor="#f05537" labelFloat="true" layoutX="341.0" layoutY="51.0" maxWidth="238.0" minWidth="214.0" prefHeight="32.0" prefWidth="238.0" promptText="Rechercher par prénom ou email" unFocusColor="#f05537">
+                           <font>
+                              <Font name="Roboto Black" size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="Search" buttonType="RAISED" layoutX="581.0" layoutY="47.0" onAction="#search" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #F05537;" text="Search" textFill="#fffefe">
+                           <font>
+                              <Font name="Roboto Black" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="14.0" wrappingWidth="19.0" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="tableUsers" layoutX="24.0" layoutY="173.0" onSort="#buildUsersTable" prefHeight="490.0" prefWidth="706.0" style="-fx-background-color: #FFF;">
+                    <columns>
+                        <TableColumn fx:id="IDUser" prefWidth="61.0" text="ID" />
+                      <TableColumn fx:id="lastname" prefWidth="203.0" text="Nom Evénement" />
+                        <TableColumn fx:id="firstname" prefWidth="203.0" text="Organisateur" />
+                      <TableColumn fx:id="Mail" prefWidth="236.0" text="Nombre de places" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

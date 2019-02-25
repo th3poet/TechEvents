@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="signinPane" prefHeight="450.0" prefWidth="877.0" style="-fx-background-color: #F05537;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SigninController">
+    <children>
+      <AnchorPane layoutX="543.0" layoutY="48.0" prefHeight="368.0" prefWidth="293.0" style="-fx-background-color: #FFF; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 3;">
+         <children>
+            <JFXTextField fx:id="txtemail" focusColor="#f05537" labelFloat="true" layoutX="37.0" layoutY="128.0" maxWidth="249.0" minWidth="212.0" prefHeight="32.0" prefWidth="220.0" promptText="Adresse Mail" unFocusColor="#1e0a3c">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtpassword" focusColor="#f05537" labelFloat="true" layoutX="37.0" layoutY="187.0" maxWidth="249.0" minWidth="163.0" prefHeight="32.0" prefWidth="220.0" promptText="Mot de passe" unFocusColor="#1e0a3c">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnsignin" layoutX="37.0" layoutY="254.0" onMouseClicked="#loginaccountaction" prefHeight="26.0" prefWidth="220.0" style="-fx-background-color: #F05537;" text="Se Connecter" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="86.0" layoutY="57.0" text="Se Connecter" textFill="#1e0a3c">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="signinimgprog" fitHeight="55.0" fitWidth="62.0" layoutX="116.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ajax-loader.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelerror" layoutX="21.0" layoutY="311.0" prefHeight="24.0" prefWidth="252.0" textFill="#1e0a3c">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="466.0" fitWidth="627.0" layoutX="-131.0" layoutY="-7.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="161.0" layoutY="88.0" text="TechEvents" textFill="WHITE">
+         <font>
+            <Font name="FontAwesome Regular" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="213.0" text="Plateforme de Gestion d'Evénements Technologiques" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btngocreateaccount" layoutX="133.0" layoutY="320.0" onMouseClicked="#opencreateaccountaction" prefHeight="26.0" prefWidth="220.0" style="-fx-background-color: #FFFF;" text="Crée un Compte" textFill="#f05537">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>
